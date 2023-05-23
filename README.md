@@ -7,6 +7,7 @@ The Personal Finance Tracker is a web application that allows users to track the
     Edit or delete existing transactions
     View transaction history with descriptions, amounts, and dates
     Calculate and display the current balance
+![image](https://github.com/Smriti925/Finance_Tracker/assets/77229239/680613fa-4e69-4755-843f-c06369cd5bdd)
 
 <h2>Technologies Used</h2>
 
