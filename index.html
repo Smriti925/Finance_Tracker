@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Finance Tracker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .bg-image {
+        background-image: url("bg.jpg");
+        background-repeat: repeat;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <div class="flex-grow">
+      <div class="bg-image flex items-center justify-center h-48">
+        <h1 class="text-4xl font-bold text-black">Personal Finance Tracker</h1>
+      </div>
+      <div class="p-4 md:p-10 lg:p-20">
+        <form id="form" class="flex flex-col md:flex-row gap-2">
+          <input
+            type="text"
+            id="descriptionInput"
+            placeholder="Description"
+            class="w-full md:w-1/2 p-4 border border-gray-300 rounded-md"
+          />
+          <input
+            type="number"
+            id="amountInput"
+            placeholder="Amount"
+            class="w-full md:w-1/4 p-4 border border-gray-300 rounded-md"
+          />
+          <select
+            id="typeSelect"
+            class="w-full md:w-1/4 p-4 border border-gray-300 rounded-md"
+          >
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+          <button
+            type="submit"
+            class="w-full md:w-1/4 p-2 bg-red-600 text-white rounded-md"
+          >
+            Add Transaction
+          </button>
+        </form>
+
+        <div id="balance" class="py-4 mt-4">
+          <h2 class="text-xl font-semibold">
+            Current Balance:
+            <span id="balanceAmount" class="text-green-600">0</span>
+          </h2>
+        </div>
+
+        <div class="history bg-white rounded-lg shadow-md p-4 mt-4">
+          <h3 class="font-bold">History</h3>
+          <div id="transactionList"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-gray-300 text-black p-2">
+      <div class="container mx-auto text-center">
+        <p>
+          Connect:
+          <a href="mailto:smriti37031@gmail.com" class="underline"
+            >smriti37031@gmail.com</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
